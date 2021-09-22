@@ -20,10 +20,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVx-M5-ERD">
                                 <rect key="frame" x="20" y="110" width="374" height="651"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Import an Image using + button above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-0t-iOy">
-                                        <rect key="frame" x="43" y="315" width="289" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import an Image using + button above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-0t-iOy">
+                                        <rect key="frame" x="43" y="315" width="288" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="a2g-0t-iOy" secondAttribute="height" multiplier="289:21" id="FxC-zL-Pus"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <color key="highlightedColor" name="AccentColor"/>
                                     </label>
@@ -33,10 +35,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="a2g-0t-iOy" firstAttribute="centerY" secondItem="uYB-Il-W9m" secondAttribute="centerY" id="Dn4-bG-wvv"/>
                                     <constraint firstItem="uYB-Il-W9m" firstAttribute="centerY" secondItem="xVx-M5-ERD" secondAttribute="centerY" id="LBX-iU-hmo"/>
                                     <constraint firstItem="uYB-Il-W9m" firstAttribute="top" secondItem="xVx-M5-ERD" secondAttribute="top" constant="10" id="RCg-SU-iM2"/>
+                                    <constraint firstItem="a2g-0t-iOy" firstAttribute="centerX" secondItem="uYB-Il-W9m" secondAttribute="centerX" id="f4g-D6-N6t"/>
                                     <constraint firstItem="uYB-Il-W9m" firstAttribute="centerX" secondItem="xVx-M5-ERD" secondAttribute="centerX" id="gfg-kb-qHO"/>
                                     <constraint firstItem="uYB-Il-W9m" firstAttribute="leading" secondItem="xVx-M5-ERD" secondAttribute="leading" constant="10" id="qJn-Kf-RB7"/>
+                                    <constraint firstItem="a2g-0t-iOy" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xVx-M5-ERD" secondAttribute="leading" constant="43" id="qcx-1c-oP3"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gl-fw-bLb">
